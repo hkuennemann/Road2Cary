@@ -6,7 +6,7 @@ TEAM_PROGRESS_DF = None
 def get_data(date: str):
     try:
         file_path = os.path.join(
-            r"C:\Users\hekunn\OneDrive - SAS\Documents\Road2Cary\Road2Cary\Data",
+            r"Data",
             date,
             "team_progress.csv"
         )
