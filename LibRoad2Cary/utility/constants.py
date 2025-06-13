@@ -36,7 +36,7 @@ COATLINE_COLOR="darkgray"
 # ==================================================================================================
 
 # Include Road2Cary Logo and last updated text
-ROAD2CARY_LOGO_PATH = "C:\Users\hekunn\OneDrive - SAS\Documents\Road2Cary\Road2Cary\R2C_Logo.png"
+ROAD2CARY_LOGO_PATH = "R2C_Logo.png"
 
 # ==================================================================================================
 #
