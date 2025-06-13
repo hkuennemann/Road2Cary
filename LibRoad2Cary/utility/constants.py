@@ -36,7 +36,7 @@ COATLINE_COLOR="darkgray"
 # ==================================================================================================
 
 # Include Road2Cary Logo and last updated text
-ROAD2CARY_LOGO_PATH = "/Users/hendrik/Documents/SAS/Road2Cary/SAS_logo.png"
+ROAD2CARY_LOGO_PATH = "C:\Users\hekunn\OneDrive - SAS\Documents\Road2Cary\Road2Cary\R2C_Logo.png"
 
 # ==================================================================================================
 #
@@ -55,29 +55,6 @@ ROUTE = [
     ("Dublin", (53.3498, -6.2603)),
     ("Cary", (35.7915, -78.7811))
 ]
-
-# CSV data for team distances
-TEAM_DATA = """Team,Distance
-    Cardio Cocktails, 100
-    Catch us if you can, 200
-    Channel Sales, 300
-    Commercial SAles + Drinkers with an Exercise Problem + NERDS, 400
-    IDeaS_1, 500
-    IDeaS_2, 600
-    NE FS CA, 700
-    NE Marketing, 800
-    Platform Consulting Team!, 900
-    Team A, 1000
-    Team B, 1100
-    Team C, 1200
-    Team D, 1300
-    Team E, 1400
-    Team F, 1500
-    Team G, 1600
-    """
-
-# Read CSV from string
-TEAM_DISTANCES = pd.read_csv(StringIO(TEAM_DATA))
 
 # Directional offsets for city labels
 CITY_LABEL_OFFSETS = {

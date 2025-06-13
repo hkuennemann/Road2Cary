@@ -1,7 +1,7 @@
 import plotly.graph_objects as go
 
-from LibRoad2Cary.utility import constants
-from LibRoad2Cary.utility import functions_calcVals
+from LibRoad2Cary.utility import constants, functions_calcVals
+from LibRoad2Cary.data import datasets
 
 # --- Create map ---
 ROAD2CARY_MAP = go.Figure()
@@ -58,7 +58,7 @@ for city, (lat, lon) in constants.ROUTE:
     ))
 
 # Add team markers with tooltips
-for _, row in constants.TEAM_DISTANCES.iterrows():
+for _, row in datasets.TEAM_PROGRESS_DF.iterrows():
     lat, lon = functions_calcVals.interpolate_position(row["Distance"])
     ROAD2CARY_MAP.add_trace(go.Scattergeo(
                   lon=[lon],
