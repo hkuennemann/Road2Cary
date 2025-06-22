@@ -56,6 +56,12 @@ Prefer pip? Generate a requirements file with conda list --export > requirements
    Place the latest team_progress.csv inside a new folder named after the date:
    Data/06_23_25/team_progress.csv
 
+   Example:
+   | Column                  | Type  | Description                                   | Example      |
+   |-------------------------|-------|-----------------------------------------------|--------------|
+   | `Team_Name`             | str   | Display name shown in the tooltip             | Flying Geese |
+   | `Total_Capped_Duration` | float | Cumulative kilometres recorded by the team    | 235.5        |
+
 2. **Render the map:**
    Run the showcase.ipynb and change the date cell!
 
