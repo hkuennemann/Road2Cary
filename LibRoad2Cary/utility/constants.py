@@ -27,7 +27,7 @@ TEAM_MARKER_COLOR = "Blue"  # TODO: SAS Blue / SAS Gray
 COUNTRY_COLOR='#D9D9D9'
 LAND_COLOR='#F2F2F2'
 OCEAN_COLOR="#C4DEFD"
-COATLINE_COLOR="darkgray"
+COASTLINE_COLOR="darkgray"
 
 # ==================================================================================================
 #

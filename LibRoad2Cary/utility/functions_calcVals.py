@@ -1,13 +1,34 @@
+"""
+functions_calcVals.py
+
+Provides utility functions and constants for geographic interpolation and rendering support
+for the Road to Cary visualization tool.
+
+This module includes:
+- Geodesic distance-based interpolation for team positions on the route.
+- Calculation of initial bearings between geographic points.
+- Base64 encoding of an image for embedding into Plotly.
+- Generation of a timestamp string for annotations.
+
+Dependencies:
+    - geopy
+    - base64
+    - datetime
+    - math
+    - constants from LibRoad2Cary.utility
+"""
+
 from geopy.distance import geodesic
 from geopy import Point
 import base64
 import datetime
+import math
 
 from LibRoad2Cary.utility import constants
 
 # ==================================================================================================
 #
-#   ...
+#   Functions
 #
 # ==================================================================================================
 
@@ -18,7 +39,17 @@ for i in range(len(constants.ROUTE) - 1):
 
 # --- Interpolation ---
 def initial_bearing(start, end):
-    import math
+    """
+    Calculates the initial bearing (forward azimuth) from a starting geographic point
+    to an ending point using spherical trigonometry.
+
+    Args:
+        start (Point): The starting point (geopy Point).
+        end (Point): The destination point (geopy Point).
+
+    Returns:
+        float: The initial bearing in degrees from North (0°–360°).
+    """
     lat1 = math.radians(start.latitude)
     lat2 = math.radians(end.latitude)
     delta_lon = math.radians(end.longitude - start.longitude)
@@ -30,6 +61,16 @@ def initial_bearing(start, end):
     return bearing_deg
 
 def interpolate_position(dist_km):
+    """
+    Interpolates a geographic coordinate along the Road to Cary route 
+    based on a cumulative distance traveled in kilometers.
+
+    Args:
+        dist_km (float): The total distance in kilometers from the route's start.
+
+    Returns:
+        tuple: A tuple (latitude, longitude) representing the interpolated position.
+    """
     for i in range(len(CUMULATIVE_DISTANCES) - 1):
         d_start = CUMULATIVE_DISTANCES[i]
         d_end = CUMULATIVE_DISTANCES[i + 1]
@@ -46,7 +87,7 @@ def interpolate_position(dist_km):
 
 # ==================================================================================================
 #
-#   ...
+#   Calculated Values
 #
 # ==================================================================================================
 
