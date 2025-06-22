@@ -4,21 +4,21 @@
 Track our collective journey from Marlow (UK) to Cary (USA) as teams log daily kilometres over two weeks. This repository contains the code, data, and instructions to generate an interactive Plotly map and host it with GitHub Pages.
 
 ## Table of Contents
-- [About the Challenge](#About the challenge)
-- [Repository Structure](#Repository Structure)
-- [Environment Setup (environment.yml)](#Environment Setup (environment.yml))
-- [Create / Update a Daily Map](#Create / Update a Daily Map)
-- [Publish with GitHub Pages](#Publish with GitHub Pages)
+- [About the Challenge](#aboutthechallenge)
+- [Repository Structure](#repositorystructure)
+- [Environment Setup (environment.yml)](#repositorystructure)
+- [Create / Update a Daily Map](#updatemap)
+- [Publish with GitHub Pages](#publishpages)
 
-## About the Challenge
+## About the Challenge <a name="aboutthechallenge"></a>
 
 The Road2Cary initiative encourages employees to stay active. Every kilometre recorded by a participant moves their team marker the same distance along the predefined route:
 
 Marlow → Copenhagen → Helsinki → Stockholm → Oslo → Glasgow → Dublin → Cary
 
-The map lets everyone see daily progress.
+The map lets everyone see their progress throughout the challenge. The map can be updated as often as needed to reach hourly, daily, ... updates.
 
-## Repository Structure
+## Repository Structure <a name="repositorystructure"></a>
 
 .<br />
 ├── Data/<br />
@@ -37,7 +37,7 @@ The map lets everyone see daily progress.
 
 Only index.html at the repo root is used by GitHub Pages; the Data/ copies are kept as an archive of past days.
 
-## Environment Set‑up
+## Environment Set‑up <a name="repositorystructure"></a>
 
 The project relies on a few geospatial and plotting libraries defined in environment.yml. Create the environment once, then reuse it for all map updates.
 
@@ -50,7 +50,7 @@ The project relies on a few geospatial and plotting libraries defined in environ
 
 Prefer pip? Generate a requirements file with conda list --export > requirements.txt and use a virtualenv instead.
 
-## Create / Update a Daily Map
+## Create / Update a Daily Map <a name="updatemap"></a>
 
 1. **Add new data:**
    Place the latest team_progress.csv inside a new folder named after the date:
@@ -66,7 +66,7 @@ Prefer pip? Generate a requirements file with conda list --export > requirements
 
 GitHub Pages will redeploy automatically (usually <60 s).
 
-## Publish with GitHub Pages
+## Publish with GitHub Pages <a name="publishpages"></a>
 
 **One‑time setup**
 
