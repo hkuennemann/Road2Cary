@@ -20,13 +20,14 @@ The map lets everyone see their progress throughout the challenge. The map can b
 
 ## Repository Structure <a name="repositorystructure"></a>
 
+```text
 .
 ├── Data/                       # Outputs by date
 │   └── MM_DD_YY/               # One folder per challenge day
 │       ├── team_progress.csv   # Distances for that specific day
 │       └── index.html          # Auto-generated map for the day
 │
-├── LibRoad2Cary/              # Reusable Python package
+├── LibRoad2Cary/               # Reusable Python package
 │   ├── data/
 │   │   └── datasets.py         # CSV loader
 │   ├── map/
@@ -35,9 +36,10 @@ The map lets everyone see their progress throughout the challenge. The map can b
 │       ├── constants.py
 │       └── functions_calcVals.py
 │
-├── showcase.ipynb             # Example usage notebook
-├── environment.yml            # Conda environment specification
-└── index.html                 # Latest map served via GitHub Pages
+├── showcase.ipynb              # Example usage notebook
+├── environment.yml             # Conda environment specification
+└── index.html                  # Latest map served via GitHub Pages
+```
 
 Only index.html at the repo root is used by GitHub Pages; the Data/ copies are kept as an archive of past days.
 
