@@ -1,13 +1,14 @@
 # Road2Cary Challenge – Map Builder
+![image](https://github.com/user-attachments/assets/1060e5b6-dcaa-426a-b4a7-d0edc9d39ef6)
 
 Track our collective journey from Marlow (UK) to Cary (USA) as teams log daily kilometres over two weeks. This repository contains the code, data, and instructions to generate an interactive Plotly map and host it with GitHub Pages.
 
 ## Table of Contents
-- [About the Challenge](##About the challenge)
-- [Repository Structure](##Repository Structure)
-- [Environment Setup (environment.yml)](##Environment Setup (environment.yml))
-- [Create / Update a Daily Map](##Create / Update a Daily Map)
-- [Publish with GitHub Pages](##Publish with GitHub Pages)
+- [About the Challenge](#About the challenge)
+- [Repository Structure](#Repository Structure)
+- [Environment Setup (environment.yml)](#Environment Setup (environment.yml))
+- [Create / Update a Daily Map](#Create / Update a Daily Map)
+- [Publish with GitHub Pages](#Publish with GitHub Pages)
 
 ## About the Challenge
 
@@ -19,20 +20,20 @@ The map lets everyone see daily progress.
 
 ## Repository Structure
 
-.
-├── Data/
-│   └── MM_DD_YY/               # one folder per challenge‑day
-│       ├── team_progress.csv   # distances for that day
-│       └── index.html          # auto‑generated map for the day
-│
-├── LibRoad2Cary/               # reusable Python package
-│   ├── data/datasets.py        # CSV loader
-│   ├── map/map.py              # Road2CaryMap class (Plotly)
-│   └── utility/                # constants & helper functions
-│
-├── showcase.ipynb              # example notebook
-├── environment.yml             # conda environment spec
-└── index.html                  # **latest** map served by GitHub Pages
+.<br />
+├── Data/<br />
+│   └── MM_DD_YY/               # one folder per challenge‑day<br />
+│       ├── team_progress.csv   # distances for that day<br />
+│       └── index.html          # auto‑generated map for the day<br />
+│<br />
+├── LibRoad2Cary/               # reusable Python package<br />
+│   ├── data/datasets.py        # CSV loader<br />
+│   ├── map/map.py              # Road2CaryMap class (Plotly)<br />
+│   └── utility/                # constants & helper functions<br />
+│<br />
+├── showcase.ipynb              # example notebook<br />
+├── environment.yml             # conda environment spec<br />
+└── index.html                  # **latest** map served by GitHub Pages<br />
 
 Only index.html at the repo root is used by GitHub Pages; the Data/ copies are kept as an archive of past days.
 
