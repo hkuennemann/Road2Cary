@@ -82,7 +82,7 @@ GitHub Pages will redeploy automatically (usually <60 s).
    - Source: Deploy from a branch
    - Branch: main (or your default)
    - Folder: / (root)
-4. Click Save. Your map will be live at: https://<username>.github.io/<repository>/
+4. Click Save. Your map will be live at: 'https://<username>.github.io/<repository>/'
 
 **Updating the live map**
 Just repeat the Create / Update routine—every push containing a new root‑level index.html triggers a Pages redeploy.
