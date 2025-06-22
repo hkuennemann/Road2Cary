@@ -20,20 +20,24 @@ The map lets everyone see their progress throughout the challenge. The map can b
 
 ## Repository Structure <a name="repositorystructure"></a>
 
-.<br />
-├── Data/<br />
-│   └── MM_DD_YY/               # one folder per challenge‑day<br />
-│       ├── team_progress.csv   # distances for that day<br />
-│       └── index.html          # auto‑generated map for the day<br />
-│<br />
-├── LibRoad2Cary/               # reusable Python package<br />
-│   ├── data/datasets.py        # CSV loader<br />
-│   ├── map/map.py              # Road2CaryMap class (Plotly)<br />
-│   └── utility/                # constants & helper functions<br />
-│<br />
-├── showcase.ipynb              # example notebook<br />
-├── environment.yml             # conda environment spec<br />
-└── index.html                  # **latest** map served by GitHub Pages<br />
+.
+├── Data/                       # Outputs by date
+│   └── MM_DD_YY/               # One folder per challenge day
+│       ├── team_progress.csv   # Distances for that specific day
+│       └── index.html          # Auto-generated map for the day
+│
+├── LibRoad2Cary/              # Reusable Python package
+│   ├── data/
+│   │   └── datasets.py         # CSV loader
+│   ├── map/
+│   │   └── map.py              # Road2CaryMap class using Plotly
+│   └── utility/                # Constants & helper functions
+│       ├── constants.py
+│       └── functions_calcVals.py
+│
+├── showcase.ipynb             # Example usage notebook
+├── environment.yml            # Conda environment specification
+└── index.html                 # Latest map served via GitHub Pages
 
 Only index.html at the repo root is used by GitHub Pages; the Data/ copies are kept as an archive of past days.
 
